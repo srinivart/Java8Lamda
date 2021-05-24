@@ -1,0 +1,246 @@
+Lamda Expressions
+------------------
+
+this concept introduced in java8, this is the best feature that came as part of the jdk 8
+
+
+First we should know
+what is lamda expression & 
+what is the need of this ?
+
+
+
+
+-->the Expression through which we can represent an Anonymous function
+
+
+Anonymous: Nameless/unknown 
+
+Anonymous function: A method which doens't have any name or modifier/ 
+				    no method name or any prefix
+
+
+
+Syntax: 
+--------
+           parameter    Expression     Body
+              0             ->          System.out.println("Lambda Syntax")
+              
+              
+ 
+ 
+ 
+ using lamda expression we can convert our abstract method to anonymous function
+ 
+ 
+ 
+ 
+ 
+ Example
+ ---------------------------------------->
+ public class AnonymousFunEx{
+ 
+ public void m1(){
+     System.out.println("Normal method / function")
+ }
+ 
+ 
+ (){
+  System.out.println("Anonymous Method / function")
+ }
+ 
+ 
+ public static void main(String[] args){
+     new AnonymousFunEx().m1();
+ }
+ 
+ 
+ } 
+ 
+  ---------------------------------------->
+ 
+   
+   
+   
+   
+    (){
+  System.out.println("Anonymous Method / function")
+ }
+ 
+ ---------------------------------------->
+ 
+ 
+ the above is anonymous function.
+ 
+   
+   if it doesnn't have method name or any prefix 
+   
+   how we can call this method
+        
+       
+  
+  --> in traditional way we can call the m1() method name
+  
+  we know the method name
+  we know the return type
+  we know the modifier
+  
+  
+  
+  --> but we can't call this anonymous method
+  because it doesn't have any name or prefix
+  
+  
+  
+  
+  
+  
+  
+  
+  --> for every method we can't write the lamda expression
+  
+  
+  
+  
+  -->
+  
+  lamda expression is only applicable for functional interfaces
+  
+  
+   the method which present in the functional interface
+   for that particular method, we can write the lamda expression
+   
+   
+   
+   
+   
+   
+  
+  
+  --> First we should know Functional Interface
+  
+  then we come to for functional interface how we can write the lamda expression
+  
+  
+  
+  
+  
+  
+  Functional Interface
+  ------------------> 
+  
+  the interface which contains 
+  
+    --> only one abstract method 
+    --> but have multiple default
+    ---> static method is called functional interface
+    
+    
+  Ex: 
+  
+     Runnalbe   --> run()
+     
+     Callable  -->  call()
+     
+     Comparable --> compareTo()
+     
+     Comparator --> compare()
+     
+     
+   
+   
+   -->
+   
+   so as we know inside interface we can write 
+   
+   default method &
+   static method
+   
+   
+   
+   
+ --> and if the interface contains only one abstract method we can say that 
+    it as Functional interface
+    
+    
+    
+      
+  
+  
+  -->
+  
+  Ex: 
+  
+  
+  @FunctionalInterface
+  public interface Runnable {
+  
+  
+  public abstract void run();
+  
+  }   
+  
+       
+  
+  
+ -->      
+ 
+ 
+ 
+ so we can say it as Functional interface..
+ so similar way, we can write our own Functional interface
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ---->
+ 
+ Lets do one real time example
+ 
+ assume you are getting list of responses from the database or either 
+ third party API call,  and you want to return the same data with sorting order
+ 
+ 
+ 
+ ex: 
+ 
+ suppose I am getting book objects , book name, based on the page size
+ 
+ I need to sort it and return to UI
+ 
+ in such cases, we can go for the comparator
+ 
+ 
+ 
+ that we will do with lamda expression
+ 
+ 
+ 
+  
+   
+   
+   
+       
+       
+       
+        
+        
+        
+                  
+  
